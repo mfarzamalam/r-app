@@ -1,5 +1,7 @@
 import React from 'react';
 import Welcome from './start';
+import Room from './Room';
+
 import './App.css';
 
 function App({name,age}) {
@@ -12,7 +14,12 @@ function App({name,age}) {
                 </ul>
                 I think the best you can do is to read a book coz your age is = {age},
                 When you are {age + 10}. Then you'll go for option 2
+                <div>
+                        <br/> <br/>
+                        <Room> </Room>
+                </div>
         </div>
+
 }
 
 export default App;

@@ -1,0 +1,12 @@
+.room {
+    height: 100%;
+    text-transform: uppercase;
+}
+
+.lit {
+    background-color: rgb(137, 219, 219);
+}
+
+.dark {
+    background-color: rgb(199, 71, 71);
+}
