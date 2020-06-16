@@ -26,7 +26,7 @@ function Room() {
             </div> */}
 
             <div className={`App room ${islit ? "lit":"dark"}`}>
-                light is {islit ? "On":"Off"} <button onClick={()=> setlit(true)}>On</button><button onClick={()=> setlit(false)}>off</button> 
+                light is {islit ? "On":"Off"} <button onClick={()=> setlit(true)}>On</button><button onClick={()=> setlit(false)}>off</button><button onClick={()=> setlit(!islit)}>Toggle</button> 
             </div>
             <br/>
             
