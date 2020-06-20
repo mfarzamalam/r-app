@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Welcome from './start';
 import Room from './Room';
+import Parent from './Parent'
 
 import './App.css';
 
 function App({name,age}) {
+        let [number,setnumber] = useState(60);
   return <div><div className="App"><Welcome name={name}></Welcome></div>
                 <p>What would you like to do ? </p>
                 <ul>
@@ -18,6 +20,14 @@ function App({name,age}) {
                         <br/> <br/>
                         <Room> </Room>
                 </div>
+
+                <br/><br/><br/><br/>
+                
+                <div>
+                        <Parent num={number}></Parent>
+                        <button onClick={()=>{ setnumber(++number) }}> Upgrade age ++ </button>
+                </div>
+        
         </div>
 
 }
