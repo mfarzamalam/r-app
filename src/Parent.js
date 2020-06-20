@@ -1,11 +1,13 @@
 import React from 'react';
 import Child from './Child';
+import Child2 from './Child2';
 
-function Parent(p) {
+function Parent() {
     return (
     <div>
-        Parent Age is {p.num}
-        <Child chnum={p.num - 30 } ></Child>
+        <h4>Parent value is : </h4>
+        <Child></Child>
+        <Child2></Child2>
     </div>
     );
 }
